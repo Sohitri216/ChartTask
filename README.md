@@ -18,4 +18,11 @@ $ npm install bower -g
 $ npm install && bower install
 $ npm run watch
 ```
-Browse the www folder in your localhost
+
+To run the local server, run from root directory
+
+```sh
+$ node app.js
+```
+
+then browse [localhost:8000](http://localhost:8000)
