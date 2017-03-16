@@ -1,0 +1,15 @@
+{
+  "name": "ChartTask",
+  "version": "1.0.0",
+  "description": "For all the things related to ChartTask.",
+  "authors": "Sohitri",
+  "dependencies": {
+    "angular": "1.5.9",
+    "bootstrap": "^3.3.6",
+    "angular-bootstrap": "^0.14.3",
+    "angular-ui-router": "^0.3.2",
+    "jquery": "~2.1.4",
+    "ngDraggable": "^0.1.11"
+  },
+  "devDependencies": {}
+}

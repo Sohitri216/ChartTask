@@ -1,0 +1,64 @@
+body {
+  /*Nested css*/
+  max-width: 100%;
+  background-color: #fff;
+  color: #111;
+  overflow-x: hidden;
+  /*Common css*/ }
+  body .chart-header {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px; }
+  body .axis-value {
+    min-height: 307px;
+    padding-left: 15px; }
+    body .axis-value ul {
+      padding: 0px; }
+      body .axis-value ul .specification-list {
+        list-style-type: none;
+        cursor: pointer;
+        padding: 5px; }
+  body .right-panel .chart-dimension {
+    min-height: 500px; }
+    body .right-panel .chart-dimension .chart-container {
+      padding: 20px 0 0 20px;
+      text-align: center; }
+  body .header-axis-value {
+    font-size: 20px;
+    padding: 10px 0; }
+    body .header-axis-value .dimension-properties {
+      text-decoration: none;
+      padding-right: 10px; }
+    body .header-axis-value ul {
+      padding-left: 0; }
+      body .header-axis-value ul li {
+        list-style-type: none; }
+  body .dimension-drag-zone {
+    margin-right: 15px; }
+  body .mt-10 {
+    margin-top: 10px; }
+  body .mtr5 {
+    margin: 5px 5px 0 0; }
+  body .pad-left15 {
+    padding-left: 15px; }
+  body .background-grey {
+    background-color: #D6EBF2; }
+  body .border-dark {
+    border: 2px solid #2f4f4f; }
+  body .text-decoration-underline {
+    text-decoration: underline; }
+  body .text-center {
+    text-align: center; }
+  body .pad0 {
+    padding: 0; }
+  body .drag-enter {
+    border: 2px solid #2f4f4f; }
+  body .drag-over {
+    background-color: #fff;
+    padding: 10px;
+    z-index: 9999;
+    position: absolute; }
+  body .min-height-dimension {
+    min-height: 116px; }
+  body .min-height-measures {
+    min-height: 500px; }

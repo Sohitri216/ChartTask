@@ -1,0 +1,61 @@
+<div class="container-fluid">
+    <div class="chart-header">Chart Builder</div>
+    <div class="row" ng-init="init()">
+        <!-- Left Panel for Qualitative Parameters -->
+        <div class="col-lg-2 left-panel">
+            <div class="axis-value background-grey">
+                <div class="header-axis-value text-decoration-underline">Dimensions</div>
+                <ul>
+                    <li class="specification-list" ng-repeat="dimension in dimensions">
+                        <div ng-drag="true" ng-drag-data="dimension" ng-drag-success="onDragComplete($data,$event,'dimension')" data-allow-transform="true" class="ng-binding" draggable="false" ng-bind="dimension"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Left Panel for Quantitative Parameters  -->
+            <div class="axis-value background-grey">
+                <div class="header-axis-value text-decoration-underline">Measures</div>
+                <ul>
+                    <li class="specification-list" ng-repeat="measure in measures">
+                        <div ng-drag="true" ng-drag-data="measure" data-allow-transform="true" class="ng-binding" ng-drag-success="onDragComplete($data,$event,'measure')" draggable="false" ng-bind="measure"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Right Panel -->
+        <div class="col-lg-10 right-panel">
+            <div class="row">
+                <!-- Dimension drop zone -->
+                <div class="dimension-drag-zone">
+                    <div class="header-axis-value min-height-dimension background-grey" ng-drop="true">
+                        <span class="text-decoration-underline pad-left15">Dimensions</span>
+                        <div class="pad-left15">
+                            <span class="dimension-properties" ng-bind="dimensionDropped"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Measures drop zone -->
+                <div class="col-lg-2 mt-10 pad0">
+                    <div class="header-axis-value min-height-measures background-grey" ng-drop="true">
+                        <span class="text-decoration-underline pad-left15">Measures</span>
+                        <div class="pad-left15" ng-bind="measuresDropped"></div>
+                    </div>
+                </div>
+                <!-- Display Chart -->
+                <div class="col-lg-10 mt-10">
+                    <div class="chart-dimension background-grey">
+                        <!-- DropDown for filtering chart type -->
+                        <div class="pull-right">
+                            <label class="order-text-view mtr5">
+                                <select class="filter-select form-control table-filter-field inline-block width-70" ng-model="vm.filterList" ng-options=" filter as filter.label for filter in vm.filterType">
+                                </select>
+                            </label>
+                        </div>
+                        <!-- Chart Created by parameters -->
+                        <div class="chart-container" fusioncharts width="600" height="400" type="{{vm.filterList.value}}" dataSource="{{myDataSource}}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+body {
+    /*Nested css*/
+    max-width: 100%;
+    background-color: #fff;
+    color: #111;
+    overflow-x: hidden;
+    .chart-header {
+        text-align: center;
+        font-size: 25px;
+        margin: 10px;
+    }
+    .axis-value {
+        min-height: 307px;
+        padding-left: 15px;
+        ul {
+            padding: 0px;
+            .specification-list {
+                list-style-type: none;
+                cursor: pointer;
+                padding: 5px;
+            }
+        }
+    }
+    .right-panel {
+        .chart-dimension {
+            min-height: 500px;
+            .chart-container {
+                padding: 20px 0 0 20px;
+                text-align: center;
+            }
+        }
+    }
+    .header-axis-value {
+        font-size: 20px;
+        padding: 10px 0;
+        .dimension-properties {
+            text-decoration: none;
+            padding-right: 10px;
+        }
+        ul {
+            padding-left: 0;
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+    /*Common css*/
+    .dimension-drag-zone {
+        margin-right: 15px;
+    }
+    .mt-10 {
+        margin-top: 10px;
+    }
+    .mtr5 {
+        margin: 5px 5px 0 0;
+    }
+    .pad-left15 {
+        padding-left: 15px
+    }
+    .background-grey {
+        background-color: #D6EBF2;
+    }
+    .border-dark {
+        border: 2px solid #2f4f4f;
+    }
+    .text-decoration-underline {
+        text-decoration: underline;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .pad0 {
+        padding: 0;
+    }
+    .drag-enter {
+        border: 2px solid #2f4f4f;
+    }
+    .drag-over {
+        background-color: #fff;
+        padding: 10px;
+        z-index: 9999;
+        position: absolute;
+    }
+    .min-height-dimension {
+        min-height: 116px;
+    }
+    .min-height-measures {
+        min-height: 500px;
+    }
+}
