@@ -1,6 +1,6 @@
 # ChartTask
 
-Frontend app for ChartTask
+Frontend app for generating bar and coloumn chart for sales based data
 ### instruction
 
 Requires [Node.js](https://nodejs.org/) v4+ to run.
